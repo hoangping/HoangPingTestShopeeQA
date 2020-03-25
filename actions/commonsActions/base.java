@@ -17,7 +17,7 @@ public class base extends Elements{
 			driver = new ChromeDriver();
 		}
 		if(browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.chrome.driver", path + "\\driver\\chromedriver.exe");
+			System.setProperty("webdriver.gecko.driver", path + "\\driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		return driver;
